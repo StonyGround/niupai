@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="80dp"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/processingProgressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/processingProgressTitleText"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/processingInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp" >
+
+        <!-- 进度条 -->
+        <!--<ProgressBar-->
+            <!--android:id="@+id/processingProgressbar"-->
+            <!--android:layout_width="180dp"-->
+            <!--android:layout_height="6dp"-->
+            <!--style="?android:attr/progressBarStyleHorizontal"-->
+            <!--android:background="@null"-->
+            <!--android:progress="0"-->
+            <!--android:max="100"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:progressDrawable="@drawable/finish_record_processing_progress"/>-->
+
+        <ProgressBar
+            android:id="@+id/processingProgressbar"
+            android:layout_width="180dp"
+            android:layout_height="6dp"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:background="@null"
+            android:progress="0"
+            android:max="100"
+            android:layout_centerVertical="true"/>
+        
+        <!-- 进度百分比 -->
+        <TextView 
+            android:id="@+id/processingProgressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/processingProgressNumText"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:background="@color/white"
+	android:layout_height="match_parent"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="@color/grey"
+				app:contentInsetLeft="0dp"
+				app:contentInsetStart="0dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					>
+					<TextView
+						android:id="@+id/tv_music_song_close"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="取消"
+						android:gravity="left"
+						android:layout_weight="1"
+						android:paddingLeft="10dp"
+						android:textSize="16sp"
+						android:textColor="@color/tv_black_my"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="配乐"
+						android:layout_gravity="center"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:textSize="16sp"
+						android:textColor="@color/tv_black_my"
+						/>
+
+					<TextView
+						android:id="@+id/tv_music_song_affirm"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="确定"
+						android:layout_gravity="right"
+						android:gravity="right"
+						android:layout_weight="1"
+						android:paddingRight="10dp"
+						android:textSize="16sp"
+						android:textColor="@color/tv_black_my"
+						/>
+
+				</LinearLayout>
+
+
+			</android.support.v7.widget.Toolbar>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				>
+				<com.xiuxiu.widget.SearchClearEditText
+					android:id="@+id/et_dub_music_song_search"
+					android:layout_width="match_parent"
+					android:layout_height="28.5dp"
+					android:drawableLeft="@drawable/search"
+					android:paddingBottom="5dp"
+					android:paddingTop="5dp"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:hint="搜索音乐"
+					android:drawablePadding="5dp"
+					android:background="@drawable/shape_et_music_bg_"
+					android:textColor="@color/search_bg"
+					android:textColorHint="@color/music_search"
+					android:textSize="16sp"
+					android:layout_margin="10dp"
+					/>
+
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ll_dub_music_song_gone"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="visible"
+			android:orientation="vertical"
+			>
+			<android.support.design.widget.TabLayout
+				android:id="@+id/tl_dub_music_song_tab"
+				style="@style/MyCustomTabLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				app:tabMode="scrollable">
+
+			</android.support.design.widget.TabLayout>
+
+			<View
+				android:id="@+id/v_dub_music"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:visibility="visible"
+				android:background="@color/bg_my"/>
+
+			<com.xiuxiu.widget.HorizontalScrollViewPager
+				android:id="@+id/hv_dub_music_song_viewpager"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:visibility="visible"
+				android:layout_weight="1">
+			</com.xiuxiu.widget.HorizontalScrollViewPager>
+
+		</LinearLayout>
+
+
+
+		<LinearLayout
+            android:id="@+id/ll_dub_music_search"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:background="@color/bg_my"
+			>
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rv_dub_music_search"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+			<ImageView
+				android:id="@+id/iv_dub_music_search_nodata"
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="80dp"
+				android:src="@drawable/nodata"
+				/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

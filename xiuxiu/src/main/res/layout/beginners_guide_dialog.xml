@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 关闭按钮 -->
+    <ImageButton 
+        android:id="@+id/beginnersCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dip"
+        android:layout_marginTop="12dip"
+        android:padding="10dip"
+        android:contentDescription="@null"
+        android:background="@drawable/btn_beginners_guide_close"/>
+    
+    <RelativeLayout 
+        android:id="@+id/beginnersGuideImageLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dip"
+        android:layout_marginTop="157dip">
+        
+        <!-- 引导1 -->
+        <ImageView 
+            android:id="@+id/guideOneImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/guide1"
+            android:contentDescription="@null"
+            android:layout_centerHorizontal="true"/>
+        
+        <!-- 开始引导按钮 -->
+        <Button 
+            android:id="@+id/guideBeginButton"
+            android:layout_below="@id/guideOneImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:layout_marginLeft="53dip"
+            android:layout_marginRight="53dip"
+            android:textSize="18sp"
+            android:textColor="@color/white"            
+            android:padding="10dip"
+            android:text="@string/beginnersGuideBeginText"/>
+        
+        <LinearLayout 
+            android:id="@+id/beginnersPromptLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            
+            <!-- 文字提示1 -->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beginnersGuidePromptOneText"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+            
+            <!-- 文字提示2 -->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/beginnersGuidePromptTwoText"
+                android:textColor="@color/beginners_prompt_color"
+                android:textSize="14sp"
+                android:id="@+id/beginnersGuidePromptTextView"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

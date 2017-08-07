@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/record_lensconfig_bg"
+    android:orientation="vertical" >
+    
+    <!-- 网格 -->
+	<LinearLayout
+	    android:id="@+id/lensGridBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+		android:visibility="gone"
+	    android:paddingTop="6dip"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical">
+	
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="15dip"
+			android:contentDescription="@string/app_name"
+			android:src="@drawable/btn_record_lensgrid" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="30dip"
+	        android:text="@string/recordLensGrid"
+	        android:textColor="@color/text_grayd6_blue"
+	        android:textSize="15sp"/>
+	</LinearLayout>
+	
+    <!-- 闪光灯 -->
+	<LinearLayout
+	    android:id="@+id/flashlightBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical">
+	
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="15dip"
+			android:contentDescription="@string/app_name"
+			android:src="@drawable/btn_record_flashlight" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="30dip"
+	        android:text="@string/recordLensFlashLight"
+	        android:textColor="@color/text_grayd6_blue"
+	        android:textSize="15sp"/>
+	</LinearLayout>
+	
+    <!-- 对焦 -->
+	<LinearLayout
+	    android:id="@+id/lensFocusBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical">
+	
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="15dip"
+			android:contentDescription="@string/app_name"
+			android:src="@drawable/btn_record_focus" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="30dip"
+	        android:text="@string/recordLensFocus"
+	        android:textColor="@color/text_grayd6_blue"
+	        android:textSize="15sp"/>
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/btnIconLayout"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+	        android:layout_width="70dp"
+	        android:layout_height="70dp">
+	        
+	        <!-- 背景图标 -->
+	        <ImageView
+		        android:id="@+id/btnIcon"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_centerHorizontal="true"
+		        android:padding="3dp"
+		        android:src="@drawable/theme_baby_mini"
+		        android:contentDescription="@string/app_name"/>
+	        
+	        <!-- 前景圆角 -->
+	        <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_centerHorizontal="true"
+		        android:contentDescription="@string/app_name"
+		        android:background="@drawable/bg_corners" />
+	        
+        </RelativeLayout>
+        
+        <!-- 选中标识 -->
+        <ImageView
+	        android:id="@+id/btnSelected"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:visibility="gone"
+	        android:src="@drawable/iconbtn_selected_on"
+	        android:contentDescription="@string/app_name" />
+        
+    </RelativeLayout>
+    
+    <!-- 文字 -->
+    <TextView
+        android:id="@+id/btnText"
+        android:layout_below="@id/btnIconLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_white"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

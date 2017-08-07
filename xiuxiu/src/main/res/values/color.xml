@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#30000000</color>
+    <color name="gray_light">#d3d7d4</color>
+    <color name="dark_light">#808080</color>
+    <color name="blue_dodger">#1e90ff</color>
+
+    <color name="cyan">#00ffff</color>
+    <color name="red_e73a3d">#e73a3d</color>
+    <color name="medium_gray">#bbbbbb</color>
+    <color name="light_gray">#2e2e2e</color>
+    <color name="dark_gray">#202021</color>
+    <color name="text_gray">#82858b</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="ashen">#f8f8f8</color>
+    <color name="emeraldgreen">#D8D8D8</color>
+    <color name="text_dark_gray">#2c2c2c</color>
+    <color name="text_light_gray">#c1c1c1</color>
+    <color name="text_medium_gray">#909090</color>
+    <color name="detail_text_light_gray">#a2a2a2</color>
+    <color name="text_white">#d6d6d6</color>
+    <color name="text_blue">#3aa5da</color>
+    <color name="dark_blue">#1f3d4e</color>
+    <color name="btn_disabled">#acd1e9</color>
+    <color name="register_backcolor">#F3F3F3</color>
+    <color name="register_linecolor">#DADADA</color>
+    <color name="register_btn_enable">#4EBCF1</color>
+    <color name="red_light">#ef6656</color>
+
+    <!-- 副色调 -->
+    <color name="vice_color">#e6e6e6</color>
+    <!-- 主亮线色彩 -->
+    <color name="main_highline_color">#d1d1d1</color>
+    <color name="locate_text_color">#8a8a8a</color>
+    <color name="tags_title_color">#909090</color>
+    <color name="account_security_text_color">#444444</color>
+    <color name="modifyinfo_text_color">#c2c2c2</color>
+    <color name="text_light_red">#f06656</color>
+    <color name="homepage_userinfo_color">#f0f0f0</color>
+    <!-- 广场标签背景色 -->
+    <color name="label_bg_light_blue">#59c6c8</color>
+    <color name="label_bg_light_purple">#b77add</color>
+    <color name="label_bg_light_yellow">#eb9c57</color>
+    <color name="label_bg_light_green">#87c35c</color>
+
+    <color name="aboutapp_logoname_color">#868686</color>
+    <color name="aboutapp_copyright_color">#b3b3b3</color>
+    <color name="beginners_prompt_color">#2caff3</color>
+    <color name="commentTextColor">#3aa5da</color>
+    <color name="randomCodeColor">#cccccc</color>
+
+    <!-- 评论、点赞、分享等背景色 -->
+    <color name="feed_tab_bg_pre">#ededed</color>
+    <color name="feed_tab_bg_nor">#f7f7f7</color>
+    <color name="pull_view_bg_color">#f5f5f5</color>
+
+    <!---->
+    <color name="button_login_click">#FF1235</color>
+    <color name="home_tab">#a3a3a3</color>
+    <color name="bg_my">#efeef5</color>
+    <color name="bg">#efeef5</color>
+    <color name="tv_black_my">#303030</color>
+    <color name="grey">#F8F8F8</color>
+    <color name="music_search">#AAAAAA</color>
+    <color name="music_search_type">#999999</color>
+    <color name="search_bg">#111111</color>
+    <color name="progress_bg">#333333</color>
+
+    <color name="bg_recording">#FFA000</color>
+    <color name="line">#ddd</color>
+    <color name="text">#323232</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="preview_bottom_toolbar_bg">#CC000000</color>
+    <color name="preview_bottom_size">#61FFFFFF</color>
+</resources>

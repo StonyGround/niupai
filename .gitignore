@@ -1,0 +1,8 @@
+/build
+local.properties
+niupai.iml
+/.idea/
+/.gradle/
+/.svn
+/hrshow_Android.iml
+/np.iml

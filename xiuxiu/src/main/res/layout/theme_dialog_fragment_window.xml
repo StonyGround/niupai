@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:background="@color/white"
+	android:layout_height="match_parent"
+	>
+		<RelativeLayout
+			android:id="@+id/ll_themes"
+			android:layout_width="match_parent"
+			android:layout_height="55dp"
+			android:gravity="center"
+			>
+
+			<ImageView
+				android:id="@+id/iv_theme_close"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:src="@drawable/back_b"
+				android:layout_alignParentLeft="true"
+				android:gravity="center_vertical"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="添加主题"
+				android:layout_gravity="center"
+				android:textSize="16sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/tv_black_my"
+				android:layout_alignBottom="@+id/tv_music_song_close"
+				android:layout_centerHorizontal="true" />
+
+			<ImageView
+				android:id="@+id/iv_theme_affirm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:src="@drawable/confirm"
+				android:layout_alignParentRight="true"
+				android:gravity="center_vertical"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				/>
+		</RelativeLayout>
+
+		<!-- 预览显示区 -->
+		<RelativeLayout
+			android:id="@+id/videoEditBody"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/ll_themes"
+			>
+
+			<RelativeLayout
+				android:id="@+id/videoPreviewLayout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:layout_alignParentBottom="true"
+			android:orientation="vertical"
+			android:background="@color/white"
+			android:gravity="center_horizontal|center_vertical"
+			>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="55dp"
+				android:layout_above="@id/videoEditBody"
+				android:orientation="vertical"
+				android:layout_marginTop="5dp"
+				>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/rv_theme_vray"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+				</android.support.v7.widget.RecyclerView>
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:layout_above="@id/videoEditBody"
+				android:layout_marginTop="2dp"
+				android:orientation="vertical"
+				>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/rv_theme"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+				</android.support.v7.widget.RecyclerView>
+
+			</LinearLayout>
+		</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dip"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <!-- 播放提示-->
+		<ImageView
+		    android:id="@+id/playTipImgView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="10dip"
+			android:contentDescription="@string/app_name"
+			android:visibility="invisible"
+			android:src="@drawable/record_accsong_play_tip" />
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical">
+	        
+            <!-- 歌曲名 -->
+		    <TextView 
+		        android:id="@+id/songName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="1dip"
+		        android:gravity="bottom"
+		        android:layout_weight="1"
+		        android:textColor="@color/white"
+		        android:textSize="14sp"
+		        android:text="@string/songNameText"/>
+		    
+		    <!-- 歌手名-->
+		    <TextView 
+		        android:id="@+id/singerName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="1dip"
+		        android:gravity="top"
+		        android:layout_weight="1"
+		        android:textColor="@color/dark_light"
+		        android:textSize="12sp"
+		        android:text="@string/singerNameText"/>
+	    
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="56dip"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="15dip"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	
+        <!-- 试听 -->
+        <Button
+	        android:id="@+id/listenBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="5dip"
+	        android:paddingBottom="5dip"
+	        android:text="@string/listenBtnText"
+	        android:textSize="13sp"
+	        android:textColor="@color/text_white_gray85"
+	        style="?android:attr/buttonBarButtonStyle" />
+    
+        <!-- 演唱 -->
+	    <Button
+	        android:id="@+id/singingBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="5dip"
+	        android:paddingBottom="5dip"
+	        android:text="@string/singingBtnText"
+	        android:textSize="13sp"
+	        android:textColor="@color/text_white_gray85"
+	        style="?android:attr/buttonBarButtonStyle" />
+    
+	</LinearLayout>
+    
+</RelativeLayout>

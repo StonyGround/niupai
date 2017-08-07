@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 继续编辑 -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ContinueToEditBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_darkblue"
+        android:text="@string/continueToEditText"/>
+    
+    <!-- 保存草稿 -->
+    <!-- 
+    <Button 
+        android:id="@+id/saveDraftsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_continuetoedit"
+        android:text="@string/saveDraftsText"/>
+    -->
+    
+    <!-- 放弃视频 -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/GiveUpVideoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@color/text_blue_darkblue"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:text="@string/giveUpVideoText"/>
+    
+    <!-- 取消 -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/SubmitVideoCancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_darkblue"
+        android:text="@string/cancelText"/>
+
+</LinearLayout>

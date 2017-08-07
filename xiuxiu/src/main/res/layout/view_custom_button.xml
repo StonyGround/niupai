@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_publish"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/custom_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_title_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_custom_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/NotificationTitle"
+            android:text="publish"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@id/ll_custom_button"
+        android:layout_toRightOf="@id/custom_icon"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_custom_title"
+            style="@style/NotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_custom_name"
+            style="@style/NotificationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_custom_title"
+            android:layout_marginTop="8dp"
+            android:text="content"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">牛拍</string>
+
+    <string name="home">首页</string>
+    <string name="my">我的</string>
+    <!-- Login Start -->
+    <string name="login">登录</string>
+    <string name="title_activity_login">水晶直播登录</string>
+
+    <string name="login_name">请输入账号</string>
+    <string name="login_pwd">请输入6&#8211;10位的密码</string>
+    <string name="text_login">登录</string>
+    <string name="login_wechat">微信登录</string>
+    <string name="login_qq">QQ登录</string>
+    <string name="login_sina">微博登录</string>
+
+    <string name="login_happy">欢乐直播登录</string>
+    <string name="login_crystal">水晶直播登录</string>
+    <string name="agreement_1">登录即代表您同意</string>
+    <string name="agreement_2">使用协议和隐私政策</string>
+
+    <!--Login End-->
+
+    <string name="umeng_check_sign">检查签名</string>
+    <string name="umeng_check_sina">检查新浪</string>
+    <string name="umeng_check_wx">检查微信</string>
+    <string name="umeng_check_alipay">检查支付宝</string>
+    <string name="umeng_check_qq">检查qq</string>
+    <string name="umeng_check_fb">检查facebook</string>
+    <string name="umeng_check_vk">vkontakte</string>
+    <string name="umeng_choose_style">选择分享类型</string>
+    <string name="umeng_check_title">自检工具</string>
+
+    <!--FragmentMy Start-->
+    <string name="bio_default">这个人很懒，什么都没有写。</string>
+
+    <string name="works_my">作品</string>
+    <string name="favorite_my">喜欢</string>
+    <string name="follow_my">关注</string>
+    <string name="fans_my">粉丝</string>
+    <string name="wallet_my">我的钱包</string>
+    <string name="make_money">去赚钱 ></string>
+
+    <string name="rmb_sign">¥</string>
+    <string name="money_my">10000</string>
+    <string name="withdraw">提现</string>
+    <string name="daily_redraw">每日奖励</string>
+    <string name="yuan">元</string>
+    <string name="maked_today">今日已得</string>
+    <string name="tv_msg">消息</string>
+    <string name="tv_setting">设置</string>
+    <!--FragmentMy End-->
+
+    <string name="input_comment">输入评论&#8230;</string>
+    <string name="video_bottom">主播在欢乐直播等你哟~</string>
+    <string name="tv_video_btn">点击前往</string>
+    <string name="tv_send_comment">发送</string>
+    <string name="tv_nothing">暂无数据</string>
+    <string name="tv_personal_follow">+关注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="followed">已关注</string>
+    <string name="name">名称:</string>
+    <string name="signature">签名:</string>
+    <string name="save">保存</string>
+    <string name="gender">性别:</string>
+    <string name="click_go">点击前往></string>
+    <string name="cancel">取消</string>
+    <string name="withdraw_affirm">确定</string>
+
+    <string name="guide">立即体验</string>
+
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="feedback">反馈</string>
+    <string name="cache_clear">清理缓存</string>
+    <string name="quit">退出登录</string>
+
+    <string name="reward_release">发布奖励</string>
+    <string name="reward_tv_more">奖励规则说明</string>
+    <string name="reward_tv_more2">2、奖励仅限当日（00：00至24：00）发布，且使用牛拍APP拍摄的视频；</string>
+    <string name="reward_tv_more3">*对于恶意刷数据行为，官方有权撤销奖励；对于不雅视频（色情、暴力等不健康内容），官方有权删除作品并撤销该作品奖励。</string>
+    <string name="reward_tv_moeny">元；</string>
+
+    <string name="reward_day">每日奖励</string>
+    <string name="reward_tv_day1">今日您已有</string>
+    <string name="reward_tv_day2">个视频通过奖励审核</string>
+    <string name="reward_tv_day3">已获得</string>
+
+    <string name="reward_browse">浏览奖励</string>
+    <string name="reward_tv_browse1">今日已获得</string>
+    <string name="reward_tv_browse2">次浏览，已获得</string>
+    <string name="reward_tv_browse3">今日还可获得</string>
+    <string name="reward_tv_browse_more1">1、每得到一次浏览，钱包+</string>
+    <string name="reward_tv_browse_more2">元，每天最多+</string>
+
+    <string name="reward_comment">评论奖励</string>
+    <string name="reward_tv_comment1">今日已获得</string>
+    <string name="reward_tv_comment2">人评论，已获得</string>
+    <string name="reward_tv_comment3">今日还可获得</string>
+    <string name="reward_tv_comment_more1">1、每得到一次评论，钱包</string>
+    <string name="reward_tv_comment_more2">元，每天最多+</string>
+
+    <string name="reward_praise">点赞奖励</string>
+    <string name="reward_tv_praise1">今日已获得</string>
+    <string name="reward_tv_praise2">人点赞，已获得</string>
+    <string name="reward_tv_praise3">今日还可获得</string>
+    <string name="reward_tv_praise_more1">1、每得到一次点赞，钱包+</string>
+    <string name="reward_tv_praise_more2">元，每天最多+</string>
+
+    <string name="reward_rule">规则</string>
+
+    <string name="cache_size">%1$s</string>
+    <string name="play_num">%1$d次播放</string>
+    <string name="follow_num">%1$d赞</string>
+    <string name="comment_num">%1$d评论</string>
+
+    <string name="withdraw_title_1">提现到此账户</string>
+    <string name="withdraw_title_2">提现金额</string>
+    <string name="zfb">支付宝账号</string>
+    <string name="really_name">真实姓名</string>
+    <string name="account_explain_1">官方会把提现金额打入此支付宝账号，请确保信息准确！</string>
+    <string name="account_explain_2">用于核实您的支付宝账号，请确保信息准确！</string>
+    <string name="string_rule">提现规则</string>
+    <string name="string_rule_1">1.钱包满100元才能提现</string>
+    <string name="string_rule_2">2.每周限提现一次</string>
+    <string name="feedback_hint">请尽情吐槽吧~(๑≧∀≦๑)</string>
+
+    <string name="search_hint">输入昵称、用户id、标签</string>
+    <string name="withdraw_money_hint"><font size="16">提现金额只能为整数~</font></string>
+
+    <string name="net_setting"><font color="#FF4081">去设置</font></string>
+    <string name="net_exit"><font color="#FF4081">退出APP</font></string>
+</resources>

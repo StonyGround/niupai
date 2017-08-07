@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.jhjj9158.niupaivideo"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        // dex突破65535的限制
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'key'
+            keyPassword 'niupai'
+            storeFile file('../niupai.jks')
+            storePassword 'niupai'
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+//            shrinkResources true // 是否去除无效的资源文件
+            // dex突破65535的限制
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // dex突破65535的限制
+            multiDexEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        anzhi {
+            manifestPlaceholders = [CHANNEL_VALUE: 'anzhi', CHANNEL_ID: 10]
+        }
+        anzhuo {
+            manifestPlaceholders = [CHANNEL_VALUE: 'anzhuo', CHANNEL_ID: 35]
+        }
+        eoemarket {
+            manifestPlaceholders = [CHANNEL_VALUE: 'eoemarket', CHANNEL_ID: 12]
+        }
+        baidu {
+            manifestPlaceholders = [CHANNEL_VALUE: 'baidu', CHANNEL_ID: 16]
+        }
+        jiu {
+            manifestPlaceholders = [CHANNEL_VALUE: 'jiu', CHANNEL_ID: 13]
+        }
+        sjqq {
+            manifestPlaceholders = [CHANNEL_VALUE: 'sjqq', CHANNEL_ID: 106]
+        }
+        appchina {
+            manifestPlaceholders = [CHANNEL_VALUE: 'appchina', CHANNEL_ID: 17]
+        }
+        lenovo {
+            manifestPlaceholders = [CHANNEL_VALUE: 'lenovo', CHANNEL_ID: 90509]
+        }
+        mumayi {
+            manifestPlaceholders = [CHANNEL_VALUE: 'mumayi', CHANNEL_ID: 18]
+        }
+        hicloud {
+            manifestPlaceholders = [CHANNEL_VALUE: 'hicloud', CHANNEL_ID: 19]
+        }
+        gfan {
+            manifestPlaceholders = [CHANNEL_VALUE: 'gfan', CHANNEL_ID: 11]
+        }
+        tg {
+            manifestPlaceholders = [CHANNEL_VALUE: 'tg', CHANNEL_ID: 1]
+        }
+    }
+}
+
+task findbugs(type: FindBugs, dependsOn: 'assembleDebug') {
+
+    ignoreFailures = true
+    effort = "default"
+    reportLevel = "high"
+    println("$project.buildDir")
+    classes = files("$project.buildDir/intermediates/classes")
+    source = fileTree("src/main/java/")
+    classpath = files()
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        xml {
+            destination "$project.buildDir/findbugs.xml"
+        }
+        html {
+            destination "$project.buildDir/findbugs.html"
+        }
+    }
+
+//    //655xxx的方法限制分包处理
+//    dexOptions {
+//        //加快编译速度
+////        incremental = true
+//        preDexLibraries = false
+//        jumboMode = false
+//        javaMaxHeapSize "4g"
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile files('libs/pldroid-player-1.5.1.jar')
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.3.4'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.qiniu.pili:pili-android-qos:0.8.+'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.lzy.widget:imagepicker:0.5.5'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    // Required -- JUnit 4 framework
+    testCompile 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testCompile 'org.mockito:mockito-core:1.10.19'
+
+    androidTestCompile 'com.android.support:support-annotations:25.3.1'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    // Optional -- Hamcrest library
+    // Optional -- Hamcrest library
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+    // Optional -- UI testing with Espresso
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    // Optional -- UI testing with UI Automator
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+
+    compile project(':xiuxiu')
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_my"
+    tools:context="com.jhjj9158.niupaivideo.activity.WithdrawRuleActivity">
+
+
+    <ImageView
+        android:id="@+id/rule_seven"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/withdraw_seven"/>
+
+    <TextView
+        android:id="@+id/rule_showmsg"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rule_seven"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/rule_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_toLeftOf="@+id/tv_rule_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/home_tab"/>
+
+        <TextView
+            android:id="@+id/tv_rule_title"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_rule"/>
+
+        <View
+            android:layout_toRightOf="@+id/tv_rule_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/home_tab"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rule_1"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/rule_2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="@string/string_rule_1"/>
+
+    <TextView
+        android:id="@+id/rule_2"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_rule_2"/>
+</RelativeLayout>

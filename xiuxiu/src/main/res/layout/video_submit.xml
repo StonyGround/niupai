@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/vice_color"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <!-- 取消 -->
+        <TextView
+            android:id="@+id/addsubmitCancelTextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/btn_setting_back"
+            android:drawablePadding="-5dip"
+            android:gravity="center_vertical"
+            android:text="@string/cancelText"
+            android:textColor="@color/text_blue_darkblue"
+            android:textSize="14sp"/>
+        <!-- 发布 -->
+        <Button
+            android:id="@+id/addsubmitFinishBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_normal"
+            android:text="@string/sendText"
+            android:textColor="@color/text_blue_darkblue"
+            android:textSize="14sp"/>
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="13dip"
+        android:background="@color/vice_color"
+        android:contentDescription="@null"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- 视频缩略图 -->
+        <ImageView
+            android:id="@+id/videoThumbnails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/filter_test_mini"/>
+
+        <!-- 视频描述 -->
+        <EditText
+            android:id="@+id/videoDescText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="@string/describeVideo"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:scrollbars="vertical"
+            android:textColor="@color/locate_text_color"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+    <!-- 编辑内容的错误提示 -->
+    <TextView
+        android:id="@+id/subEditErrorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:background="@color/white">
+
+        <!-- 表情按钮 -->
+        <ImageButton
+            android:id="@+id/addExpressionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:background="@drawable/icon_smlie"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:visibility="gone"/>
+
+        <!-- 定位 -->
+        <ImageButton
+            android:id="@+id/addLocationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dip"
+            android:layout_toRightOf="@+id/addExpressionBtn"
+            android:background="@drawable/selector_iv_location"
+            android:contentDescription="@string/app_name"/>
+
+        <!-- 地理位置显示 -->
+        <TextView
+            android:id="@+id/locateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/addLocationBtn"
+            android:textColor="@color/locate_text_color"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+
+
+    <RelativeLayout
+        android:id="@+id/addTagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:padding="10dp"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!-- 添加标签 -->
+        <ImageButton
+            android:id="@+id/addTagsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dip"
+            android:background="@drawable/icon_tag"
+            android:contentDescription="@null"/>
+
+        <!-- 标签显示 -->
+        <TextView
+            android:id="@+id/addTagsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/addTagsBtn"
+            android:hint="@string/addTags"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="15sp"/>
+
+        <!-- 标签删除 -->
+        <ImageButton
+            android:id="@+id/deleteTagsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_delete_tags"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <!-- 分享到 -->
+    <GridView
+        android:id="@+id/recordFinishShareGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vice_color"
+        android:gravity="left"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@null"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_circle_save"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/video_save"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_circle_save"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/share"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dark_gray"
+              android:orientation="vertical">
+
+    <!-- 帧预览显示区 -->
+    <RelativeLayout
+        android:id="@+id/recordBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- 视频模板预览层-->
+        <RelativeLayout
+            android:id="@+id/videoTemplateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextureView
+                android:id="@+id/videoTemplatePreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <!-- 帧预览 -->
+        <RelativeLayout
+            android:id="@+id/previewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+        </RelativeLayout>
+
+        <!-- 镜头网格-->
+        <RelativeLayout
+            android:id="@+id/lensGridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camera_grid"/>
+
+        </RelativeLayout>
+
+        <!-- 覆盖,遮挡一部分帧 -->
+        <RelativeLayout
+            android:id="@+id/overlapViewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoTemplateLayout"
+            android:background="@color/dark_gray"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <!-- 伴奏歌词 -->
+        <RelativeLayout
+            android:id="@+id/accSongLyricsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom_btn">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/videoTemplateLayout"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/stickerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/selector_iv_model"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/accSongBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/selector_iv_music"/>
+
+                <TextView
+                    android:id="@+id/video_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/video_time_init"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/half_transparent">
+
+            <ImageView
+                android:id="@+id/recordCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/close_white"/>
+
+            <ImageView
+                android:id="@+id/lensFlipBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:src="@drawable/carme_reverse"/>
+
+
+            <ImageView
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/lensFlipBtn"
+                android:id="@+id/lensConfigBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/selector_flash_light"/>
+
+            <ImageView
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/lensConfigBtn"
+                android:id="@+id/video_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/selector_btn_beauty"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- 录制进度条 -->
+    <RelativeLayout
+        android:id="@+id/recordProgressLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    </RelativeLayout>
+
+    <!-- 底边栏 -->
+    <RelativeLayout
+        android:id="@+id/recordBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 模板,改为配音 -->
+        <LinearLayout
+            android:id="@+id/templateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_record_template"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/templateText"
+                android:textColor="@color/text_grayd6_blue"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/video_local_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_white"/>
+
+            <ImageView
+                android:id="@+id/iv_video_local_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/local_upload_photo"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/delete"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recordNextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/confirm"/>
+        </RelativeLayout>
+
+        <!-- 录制 -->
+        <View
+            android:id="@+id/recordAVBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_record"/>
+
+    </RelativeLayout>
+
+    <!-- 水平滑动图标按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/recordBottom"
+        android:layout_alignTop="@+id/recordBottom"
+        android:background="@color/dark_gray"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/iconBtnLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/iconBtnGridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:gravity="center"
+                        android:listSelector="#00000000"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <!-- 引导图片页 -->
+    <RelativeLayout
+        android:id="@+id/guidePageLayout"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:background="@color/black"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">xiuxiu</string>
+    <!-- 歌曲列表 -->
+    <string name="accSongListTitleText">歌曲列表</string>
+    <string name="songNameText">歌曲名</string>
+    <string name="singerNameText">歌手名</string>
+    <string name="listenBtnText">试听</string>
+    <string name="singingBtnText">演唱</string>
+
+    <!-- 录制界面 -->
+    <string name="templateText">配音</string>
+    <string name="accsongText">飙歌</string>
+    <string name="recordLensGrid">网格</string>
+    <string name="recordLensFlashLight">闪光</string>
+    <string name="recordLensFocus">对焦</string>
+    <string name="processingProgressNumText">0%</string>
+    <string name="processingProgressTitleText">请稍等&#8230;</string>
+
+    <!-- 常用 -->
+    <string name="applyText">使用</string>
+    <string name="nextText">下一步</string>
+    <string name="returnText">返回</string>
+    <string name="submitText">确定</string>
+    <string name="cancelText">取消</string>
+    <string name="finishText">完成</string>
+    <string name="editText">编辑</string>
+    <string name="sexText">性别</string>
+    <string name="deleteText">删除</string>
+    <string name="loadTipsText">正在加载中&#8230;</string>
+    <string name="loginpromptText">您还没登录，请先登录91拍！</string>
+
+    <!-- 新手引导 -->
+    <string name="beginnersGuideBeginText">开始吧</string>
+    <string name="beginnersGuidePromptOneText">已经入门了?</string>
+    <string name="beginnersGuidePromptTwoText">跳过教程</string>
+
+    <!-- 视频编辑 -->
+    <string name="themeText">主题</string>
+    <string name="filterText">滤镜</string>
+    <string name="incidentalMusicText">配乐</string>
+    <string name="text_edit">文字</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--音乐-->
+    <string name="tv_nodata">暂无数据</string>
+    <string name="load_more_text">正在加载...</string>
+
+    <string name="video_time_init">00:00</string>
+
+    <!-- 录制完成 -->
+    <string name="share">分享</string>
+    <string name="video_save">保存到本地</string>
+    <string name="sendText">发布</string>
+    <string name="addTags">添加标签</string>
+    <string name="shareTipsText">分享到：</string>
+    <string name="describeVideo">描述下这个视频吧..</string>
+    <string name="noFindWord">未匹配到结果</string>
+    <string name="addTagsError">最多输入10个中文或20个英文</string>
+    <string name="subErrorText">内容不得超过140个中文或280个英文</string>
+
+    <!-- 添加标签 -->
+    <string name="addTagsTipsText">请输入标签，最多10个字</string>
+    <string name="hotTagsText">热门标签</string>
+
+    <!-- 分享对话框 -->
+    <string name="weixin">微信好友</string>
+    <string name="quan">微信朋友圈</string>
+    <string name="weibo">腾讯微博</string>
+    <string name="qq">手机QQ</string>
+    <string name="qqZone">QQ空间</string>
+    <string name="sina">新浪微博</string>
+    <string name="fave">微信收藏</string>
+    <string name="copyLink">复制链接</string>
+    <string name="report">举报</string>
+    <string name="cancel">取消</string>
+
+    <!-- 详情页 -->
+    <string name="detailsPageText">详情页</string>
+    <string name="followText">转发</string>
+    <string name="commentText">评论</string>
+    <string name="heartText">赞</string>
+    <string name="shareText">分享</string>
+    <string name="focusOnText">关注</string>
+    <string name="commentHintText">评论视频&#8230;</string>
+    <string name="commentErrorText">评论字数不得超过140个中文或280个英文</string>
+    <string name="commentErrorIllegalText">您正在编辑的内容中含有敏感字!</string>
+
+    <!-- 分享到 (视频发布对话框) -->
+    <string name="share_qq">QQ</string>
+    <string name="share_wechat">微信</string>
+    <string name="share_friends">朋友圈</string>
+    <string name="share_renren">人人网</string>
+
+    <!-- 视频提交界面的返回提示 -->
+    <string name="continueToEditText">继续编辑</string>
+    <string name="saveDraftsText">保存草稿</string>
+    <string name="giveUpVideoText">放弃视频</string>
+
+    <string name="niupai">牛拍</string>
+
+    <string name="double_click_input_text">双击编辑文字</string>
+
+
+    <string name="permission_request_denied">Permission request denied</string>
+
+    <string name="album_name_all">全部</string>
+
+    <string name="button_preview">预览</string>
+    <string name="button_apply_default">使用</string>
+    <string name="button_apply">使用(%1$d)</string>
+    <string name="button_back">返回</string>
+    <string name="photo_grid_capture">拍一张</string>
+    <string name="empty_text">还没有图片或视频</string>
+    <string name="button_ok">我知道了</string>
+
+    <string name="error_over_count_default">您已经达到最大选择数量</string>
+    <string name="error_over_count">最多只能选择 %1$d 个文件</string>
+    <string name="error_under_quality">图片质量太低</string>
+    <string name="error_over_quality">图片质量太高</string>
+    <string name="error_file_type">不支持的文件类型</string>
+    <string name="error_type_conflict">不能同时选择图片和视频</string>
+    <string name="error_no_video_activity">没有支持视频预览的应用</string>
+</resources>

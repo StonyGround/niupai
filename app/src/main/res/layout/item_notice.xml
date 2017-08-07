@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notice_date"
+        android:layout_margin="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:paddingTop="2dp"
+        android:textSize="12sp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_notice_date"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notice_headimg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/niupai_logo"/>
+
+        <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/notice_triangle"/>-->
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/rl_notice_cotent"
+            android:orientation="vertical"
+            android:background="@drawable/btn_notice_cotent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="match_parent"
+                android:textColor="@color/tv_black_my"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/notice_line"
+                android:layout_below="@+id/notice_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_my"/>
+
+            <TextView
+                android:id="@+id/notice_go"
+                android:textColor="@color/tv_black_my"
+                android:layout_below="@+id/notice_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:text="@string/click_go"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

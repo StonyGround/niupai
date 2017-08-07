@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"
+        android:hint="@string/login_name"
+        android:maxLength="15"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/text_hint" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/login_pwd"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:textColorHint="@color/text_hint" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_login"
+        android:text="@string/text_login"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+</LinearLayout>

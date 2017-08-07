@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+   <!-- 表情列表 -->
+   <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+    </android.support.v4.view.ViewPager>  
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" 
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom|center_horizontal">
+                    	
+        <!-- 分页圆点 -->
+      	<ImageView
+         	android:id="@+id/page0"
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"        	     	
+     		android:scaleType="matrix"
+     		android:contentDescription="@null"
+     		android:src="@drawable/current" />
+         <ImageView
+         	android:id="@+id/page1"
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:layout_marginLeft="10dp"        	     	
+     		android:scaleType="matrix"
+     		android:contentDescription="@null"
+     		android:src="@drawable/notcurrent" />
+         <ImageView
+         	android:id="@+id/page2"
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:layout_marginLeft="10dp"         
+     		android:contentDescription="@null"  	     	
+     		android:scaleType="matrix"
+     		android:src="@drawable/notcurrent" />
+         <ImageView
+         	android:id="@+id/page3"
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content" 
+     		android:layout_marginLeft="10dp"       
+     		android:contentDescription="@null"   	     	
+     		android:scaleType="matrix"
+     		android:src="@drawable/notcurrent" /> 
+    
+    </LinearLayout>
+
+</FrameLayout>

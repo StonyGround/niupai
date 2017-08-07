@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#F8F8F8</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+    <color name="text_hint">#BEBEBE</color>
+    <color name="button_login">#D5D5D5</color>
+    <color name="red">#FF0000</color>
+    <color name="button_login_click">#FF1235</color>
+    <color name="tv_author_logo">#FF1235</color>
+    <color name="home_tab">#a3a3a3</color>
+
+    <color name="btn_circle_login">#EEE</color>
+
+
+    <color name="umeng_white">#ffffff</color>
+    <color name="umeng_blue">#0086DC</color>
+    <color name="umeng_black">#000000</color>
+    <color name="umeng_background">#D4E0E5</color>
+    <color name="umeng_text_color">#575A5C</color>
+    <color name="umeng_divide">#C3C6C9</color>
+
+    <color name="bg_my">#efeef5</color>
+    <color name="tv_black_my">#303030</color>
+    <color name="tv_maked_num">#FFA700</color>
+
+    <color name="bg_video_bottom">#F1F1F1</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#e0000000</color>
+    <color name="tv_personal_follow">#FF9F08</color>
+    <color name="line">#ddd</color>
+    <color name="text">#323232</color>
+    <color name="msg_notice_date">#D6D6D6</color>
+
+
+
+</resources>
